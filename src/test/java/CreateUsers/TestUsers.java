@@ -27,11 +27,13 @@ public class TestUsers {
 
     @Test
     public void testUsersByAgeLessThan40(){
+        System.out.println("Test Users by AgeLessThan40 ");
         printUsersConditions(usersList, users -> users.age <= 40);
 
     }
     @Test
     public void testUsersByAgeMoreThan40(){
+        System.out.println("Test Users by AgeMoreThan40 ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -42,6 +44,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersBySex(){
+        System.out.println("Test Users by Sex ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -52,6 +55,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByWeight(){
+        System.out.println("Test Users by Weight ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -62,6 +66,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersBySpeciality(){
+        System.out.println("Test Users by Speciality ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -72,6 +77,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersBySexAndAge(){
+        System.out.println("Test Users by Sex and age ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -82,6 +88,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByAgeAndName(){
+        System.out.println("Test Users by age and name ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -92,6 +99,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByName(){
+        System.out.println("Test Users by name ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -102,6 +110,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByNameAndSex(){
+        System.out.println("Test Users by name and sex ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -112,6 +121,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersBySexAndSpeciality(){
+        System.out.println("Test Users by sex and speciality ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -122,6 +132,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByWeightAndAge(){
+        System.out.println("Test Users by weight and age ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -132,6 +143,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByAgeAndWeightAndName(){
+        System.out.println("Test Users by age weight name ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -142,6 +154,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByAgeAndWeightAndSex(){
+        System.out.println("Test Users by age weight sex ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -152,6 +165,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByAgeAndWeightAndSexAndName(){
+        System.out.println("Test Users by age weight sex name ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
@@ -162,6 +176,7 @@ public class TestUsers {
     }
     @Test
     public void testUsersByAll(){
+        System.out.println("Test Users by all ");
         printUsersConditions(usersList, new UsersCheck() {
             @Override
             public boolean checkUserConditions(Users users) {
