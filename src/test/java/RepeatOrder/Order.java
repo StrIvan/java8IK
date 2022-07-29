@@ -10,9 +10,10 @@ public class Order {
         this.isVegan = isVegan;
         this.customerName = customerName;
     }
+
     @Override
-    public String toString(){
-        return "Price = " + price +",is vegan? - " + isVegan + ",name = " + customerName;
+    public String toString() {
+        return "Price = " + price + ",is vegan? - " + isVegan + ",name = " + customerName;
 
     }
 }
